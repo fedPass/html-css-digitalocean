@@ -1,10 +1,22 @@
 body {
+    padding-top: 105px;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
     color: #031b4e;  /*rgba(3,27,78,.7)*/
 }
 
 a:hover {
     text-decoration: none;
+}
+
+/*---header----*/
+
+header {
+    background-color: #fff;
+}
+
+header .row {
+    margin: 0 30px;
 }
 
 #header-top {
@@ -13,11 +25,14 @@ a:hover {
     border-bottom: 1px solid #e5e8ed;
     font-size: 12px;
     font-weight: bold;
-    letter-spacing: 0.5px;
 }
 
 #header-top li {
     margin-left: 25px;
+}
+
+#header-top a {
+    color: #5b6987;
 }
 
 #header-top span {
@@ -29,12 +44,50 @@ a:hover {
     font-size: 9px;
 }
 
-#header-top a {
-    color: #5b6987;
+#bunner:hover,
+#header-bottom a:hover {
+    color: #0069ff;
 }
 
-.my-bunner {
-    margin: 0 30px;
+#logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+#logo a,
+#logo i {
+    color: #0069ff;
+}
+
+#header-bottom {
+    height: 65px;
+    line-height: 65px;
+}
+
+.my-menu-link {
+    color: #031b4e;
+    font-weight: bold;
+}
+
+.btn-sign-up {
+    background-color: #fff;
+    border-color: #0069ff;
+    color: #0069ff;
+    font-weight: bold;
+}
+
+.btn-sign-up:hover {
+    background-color: #0069ff;
+    border-color: #0069ff;
+    color: #fff;
+}
+
+/*---jumbo---*/
+
+#jumbo {
+    background-color: #0248ff;
+    height: 500px;
 }
 
 
