@@ -9,6 +9,10 @@ a:hover {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 /*---header---*/
 
 header .row {
@@ -20,6 +24,10 @@ header .row {
 
 header.header-desktop {
     background-color: #fff;
+}
+
+.header-desktop {
+    display: none;
 }
 
 #header-top {
@@ -118,13 +126,18 @@ header.header-mobile {
     min-height: 800px;
 }
 
+/*-- #jumbo .container {
+    max-width: 1200px;
+    margin: 0 auto;
+} --*/
+
 .jumbotron.my-jumbotron {
     background-color: transparent;
     color: #fff;
     padding:0;
     margin: 0;
     position: relative;
-    top: 250px;
+    top: 160px;
 }
 
 .my-jumbotron p {
@@ -137,7 +150,7 @@ header.header-mobile {
     padding: 32px;
     border-radius: 5px;
     position: relative;
-    top: 185px;
+    top: 90px;
 }
 
 #subscrition-form h2 {
@@ -190,26 +203,73 @@ header.header-mobile {
     margin-right: 15px;
 }
 
+/*----customer---*/
+
+#customer {
+    background-color: #f3f5f9;
+    height: 300px;
+}
+
 
 
 /* Small devices sm (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+
+
+
+}
+
+@media screen and (min-width: 875px) {
+
+    h1 {
+        font-size: 46px;
+    }
 
 }
 
 /* Medium devices md (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
+
+
 }
 
 @media screen and (min-width: 1050px) {
 
+    h1 {
+        font-size: 54px;
+    }
+
     .header-desktop {
         display: block;
+    }
+
+    .header-mobile {
+        display: none;
+    }
+
+    .jumbotron.my-jumbotron {
+        top: 160px;
+    }
+
+    #subscrition-form {
+        top: 90px;
     }
 }
 
 /* Large lg devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+
+    h1 {
+        font-size: 62px;
+    }
+
+    .jumbotron.my-jumbotron {
+        top: 250px;
+    }
+
+    #subscrition-form {
+        top: 185px;
+    }
 
 }
