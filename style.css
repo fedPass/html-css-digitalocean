@@ -1,5 +1,4 @@
 body {
-    padding-top: 105px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
     color: #031b4e;  /*rgba(3,27,78,.7)*/
@@ -7,10 +6,6 @@ body {
 
 a:hover {
     text-decoration: none;
-}
-
-h1 {
-    font-size: 40px;
 }
 
 /*---header---*/
@@ -22,12 +17,9 @@ header .row {
 
 /*---header desktop----*/
 
-header.header-desktop {
-    background-color: #fff;
-}
-
 .header-desktop {
     display: none;
+    background-color: #fff;
 }
 
 #header-top {
@@ -102,6 +94,7 @@ header.header-desktop {
 
 header.header-mobile {
     background-color: #0248ff;
+    /*background-color: transparent;*/
     height: 105px;
     line-height: 105px;
 }
@@ -120,24 +113,17 @@ header.header-mobile {
 
 #jumbo {
     background-color: #0248ff;
-    background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
     min-height: 800px;
 }
 
-/*-- #jumbo .container {
-    max-width: 1200px;
-    margin: 0 auto;
-} --*/
-
-.jumbotron.my-jumbotron {
-    background-color: transparent;
+h1 {
+    font-size: 40px;
     color: #fff;
-    padding:0;
-    margin: 0;
-    position: relative;
-    top: 160px;
+}
+
+.my-jumbotron {
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 .my-jumbotron p {
@@ -149,8 +135,7 @@ header.header-mobile {
     background-color: #fff;
     padding: 32px;
     border-radius: 5px;
-    position: relative;
-    top: 90px;
+    margin-bottom: 50px;
 }
 
 #subscrition-form h2 {
@@ -215,7 +200,22 @@ header.header-mobile {
 /* Small devices sm (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
 
+    #jumbo {
+        background-color: #0248ff;
+        background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        min-height: 800px;
+    }
 
+
+    #subscrition-form {
+        margin-top: ;
+    }
+
+    .my-jumbotron {
+    margin-top: ;
+    }
 
 }
 
@@ -236,6 +236,10 @@ header.header-mobile {
 
 @media screen and (min-width: 1050px) {
 
+    #jumbo {
+        padding-top: 115px;
+    }
+
     h1 {
         font-size: 54px;
     }
@@ -248,13 +252,7 @@ header.header-mobile {
         display: none;
     }
 
-    .jumbotron.my-jumbotron {
-        top: 160px;
-    }
 
-    #subscrition-form {
-        top: 90px;
-    }
 }
 
 /* Large lg devices (large desktops, 1200px and up) */
@@ -264,12 +262,5 @@ header.header-mobile {
         font-size: 62px;
     }
 
-    .jumbotron.my-jumbotron {
-        top: 250px;
-    }
-
-    #subscrition-form {
-        top: 185px;
-    }
 
 }
