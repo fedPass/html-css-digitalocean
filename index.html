@@ -10,9 +10,9 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="navbar-fixed-top">
-            <div id="header-top" class="container-fluid">
-                <div class="row">
+        <header class="navbar-fixed-top hidden-xs hidden-sm hidden-md header-desktop">
+            <div class="container-fluid">
+                <div class="row" id="header-top">
                     <div class="pull-left">
                         <a href="#" id="bunner">
                             <span class="text-uppercase">New</span>
@@ -31,23 +31,31 @@
                     </div>
                 </div>
             </div>
-            <div id="header-bottom" class="container-fluid">
+            <div class="container-fluid">
+                <div class="row" id="header-bottom">
+                    <nav>
+                        <ul class="list-inline">
+                            <li class="logo logo-blue"><a href="#"><i class="fab fa-digital-ocean"></i> DigitalOcean</a></li>
+                            <li><a class="my-menu-link" href="#">Products &or;</a></li>
+                            <li><a class="my-menu-link" href="#">Marketplace</a></li>
+                            <li><a class="my-menu-link" href="#">Customers</a></li>
+                            <li><a class="my-menu-link" href="#">Partners</a></li>
+                            <li><a class="my-menu-link" href="#">Community &or;</a></li>
+                            <li><a class="my-menu-link" href="#">Pricing</a></li>
+                            <li><button class="btn btn-primary btn-sign-up">Sign Up</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <header class="navbar-fixed-top hidden-lg header-mobile">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="pull-left">
-                        <nav>
-                            <ul class="list-inline">
-                                <li id="logo"><a href="#"><i class="fab fa-digital-ocean"></i> DigitalOcean</a></li>
-                                <li><a class="my-menu-link" href="#">Products &or;</a></li>
-                                <li><a class="my-menu-link" href="#">Marketplace</a></li>
-                                <li><a class="my-menu-link" href="#">Customers</a></li>
-                                <li><a class="my-menu-link" href="#">Partners</a></li>
-                                <li><a class="my-menu-link" href="#">Community &or;</a></li>
-                                <li><a class="my-menu-link" href="#">Pricing</a></li>
-                            </ul>
-                        </nav>
+                    <div class="pull-left logo logo-white">
+                        <a href="#"><i class="fab fa-digital-ocean"></i> DigitalOcean</a>
                     </div>
                     <div class="pull-right">
-                        <button class="btn btn-primary btn-sign-up">Sign Up</button>
+                        <i class="fas fa-bars"></i>
                     </div>
                 </div>
             </div>

@@ -9,14 +9,17 @@ a:hover {
     text-decoration: none;
 }
 
-/*---header----*/
-
-header {
-    background-color: #fff;
-}
+/*---header---*/
 
 header .row {
-    margin: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*---header desktop----*/
+
+header.header-desktop {
+    background-color: #fff;
 }
 
 #header-top {
@@ -49,20 +52,21 @@ header .row {
     color: #0069ff;
 }
 
-#logo {
-    font-size: 28px;
+.logo {
+    font-size: 24px;
     font-weight: bold;
-    margin-right: 50px;
+    margin-right: 55px;
 }
 
-#logo a,
-#logo i {
+.logo.logo-blue a,
+.logo.logo-blue i {
     color: #0069ff;
 }
 
 #header-bottom {
     height: 65px;
     line-height: 65px;
+    position: relative;
 }
 
 .my-menu-link {
@@ -75,12 +79,33 @@ header .row {
     border-color: #0069ff;
     color: #0069ff;
     font-weight: bold;
+    position: absolute;
+    right: 30px;
+    bottom: 23px;
 }
 
 .btn-sign-up:hover {
     background-color: #0069ff;
     border-color: #0069ff;
     color: #fff;
+}
+
+/*----header mbile---*/
+
+header.header-mobile {
+    background-color: #0248ff;
+    height: 105px;
+    line-height: 105px;
+}
+
+.logo.logo-white a,
+.logo.logo-white i {
+    color: #fff;
+}
+
+.header-mobile i {
+    color: #74a9f2;
+    font-size: 24px;
 }
 
 /*---jumbo---*/
@@ -103,6 +128,9 @@ header .row {
 
 @media screen and (min-width: 1050px) {
 
+    .header-desktop {
+        display: block;
+    }
 }
 
 /* Large lg devices (large desktops, 1200px and up) */
