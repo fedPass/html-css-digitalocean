@@ -1,12 +1,18 @@
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
-    color: #031b4e;  /*rgba(3,27,78,.7)*/
+    color: rgba(3,27,78,.7);  /*#031b4e)*/
 }
 
 .container-small {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.container-small::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 a:hover {
@@ -15,8 +21,23 @@ a:hover {
 
 h2 {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 900;
+    margin-bottom: 16px;
+    color: #031b4e;
 }
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #031b4e;
+}
+
+h2 + p {
+    font-size: 20px;
+}
+
+/* padding */
 
 .pb-lg {
     padding-bottom: 120px;
@@ -26,12 +47,20 @@ h2 {
     padding-bottom: 64px;
 }
 
+.mb {
+    margin-bottom: 64px;
+}
+
 .pt-lg {
     padding-top: 120px;
 }
 
 .pt {
     padding-top: 64px;
+}
+
+.gray-strip {
+    background-color: #f3f5f9;
 }
 
 
@@ -48,6 +77,7 @@ header .row {
 .header-desktop {
     display: none;
     background-color: #fff;
+    box-shadow: 0 2px 4px rgba(3,27,78,.1);
 }
 
 #header-top {
@@ -145,6 +175,7 @@ header.header-mobile {
 }
 
 h1 {
+    font-weight: 900;
     font-size: 40px;
     color: #fff;
 }
@@ -219,7 +250,6 @@ h1 {
 /*----customer---*/
 
 #customer {
-    background-color: #f3f5f9;
     font-weight: bold;
     font-size: 16px;
 }
@@ -252,37 +282,80 @@ h1 {
 
 /*----features---*/
 
-/* #features .container-small div {
-    width: 100%;
-} */
-
-#features h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #031b4e;
-    margin-bottom: 15px;
-
+#features li {
+    padding: 17px 10px 17px 30px;
+    border-left: 2px solid #e5e8ed;
 }
 
-#features li {
-    padding-bottom:17px;
-    padding-left:30px;
-    padding-right:10px;
-    padding-top:17px;
+#features li a {
+    font-size: 16px;
+    color: rgba(3,27,78,.5);
+}
+
+#features li a:hover {
+    color: #031b4e;
+}
+
+#features li a:first-child {
+    color: #031b4e;
 }
 
 #features li:first-child {
     font-weight: bold;
+    color: #031b4e;
+    border-left-color: #0069ff;
+}
+
+#features .container-small > div {
+    margin-bottom: 32px;
+}
+
+/*----program-screen-------- */
+
+#program-screen img {
+    max-width: 100%;
+    box-shadow: 0 2px 4px rgba(3,27,78,.06);
+    margin-bottom: 30px;
+}
+
+.play-container {
+    height: 478px;
+    line-height: 478px;
+    font-size: 50px;
+}
+
+#play-light {
+    color: #b9b9b9;
+}
+
+.ball-bar {
+    margin-top: 20px;
+}
+
+.ball-bar span {
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 2px solid #0069ff;
+    margin: 0 5px;
+}
+
+#full-ball {
+    background-color: #0069ff;
+}
+
+.ghost-ball {
+    display: inline-block;
 }
 
 @media screen and (min-width: 480px) {
-
-    /* #features .container-small div:not(:first-child) {
-        width: 50%;
+    /* come faccio a metterlo 100% sotto i 480px???
+    #features .container-small div:not(:first-child) {
+        width: 100%;
     } */
-
 }
-
 
 /* Small devices sm (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
@@ -341,6 +414,11 @@ h1 {
 
 /* Large lg devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+
+    #jumbo .container-fluid {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
 
     h1 {
         font-size: 62px;
