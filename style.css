@@ -192,10 +192,27 @@ h1 {
 
 #customer {
     background-color: #f3f5f9;
-    height: 300px;
+    padding: 64px 0;
+    font-weight: bold;
 }
 
+#customer p {
+    color: #919da8;
+}
 
+#customer img {
+    display: inline-block;
+    max-width: 160px;
+    padding: 0 20px;
+}
+
+#customer a {
+    color: #0069ff;
+}
+
+.customer-logo {
+    padding: 20px 0;
+}
 
 /* Small devices sm (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
@@ -209,12 +226,9 @@ h1 {
     }
 
 
-    #subscrition-form {
-        margin-top: ;
-    }
-
+    #subscrition-form,
     .my-jumbotron {
-    margin-top: ;
+        margin-top: 100px;
     }
 
 }
