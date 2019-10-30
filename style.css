@@ -220,7 +220,6 @@ h1 {
 
 #customer {
     background-color: #f3f5f9;
-    padding: 64px 0;
     font-weight: bold;
     font-size: 16px;
 }
@@ -253,15 +252,34 @@ h1 {
 
 /*----features---*/
 
-.features-box {
+/* #features .container-small div {
     width: 100%;
+} */
+
+#features h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #031b4e;
+    margin-bottom: 15px;
+
+}
+
+#features li {
+    padding-bottom:17px;
+    padding-left:30px;
+    padding-right:10px;
+    padding-top:17px;
+}
+
+#features li:first-child {
+    font-weight: bold;
 }
 
 @media screen and (min-width: 480px) {
 
-    .features-box {
+    /* #features .container-small div:not(:first-child) {
         width: 50%;
-    }
+    } */
 
 }
 
