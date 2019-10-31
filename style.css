@@ -526,6 +526,32 @@ footer a:hover {
 }
 
 
+.social-nav i {
+    font-size: 21px;
+}
+
+#logo-footer {
+    color: #0069ff;
+    opacity: 1;
+}
+
+#logo-footer:hover {
+    color: #0069ff;
+}
+
+.footer-bottom {
+    margin-top: 24px;
+    height: 42px;
+    line-height: 42px;
+}
+
+footer small {
+    opacity: 0.5;
+    margin-left: 15px;
+    position: relative;
+    bottom: 10px;
+}
+
 
 
 @media screen and (min-width: 480px) {
