@@ -4,6 +4,11 @@ body {
     color: rgba(3,27,78,.7);  /*#031b4e)*/
 }
 
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .container-small {
     max-width: 900px;
     margin: 0 auto;
@@ -27,7 +32,6 @@ a:hover {
 h2 {
     font-size: 36px;
     font-weight: 900;
-    margin-bottom: 16px;
     color: #031b4e;
 }
 
@@ -40,6 +44,7 @@ h3 {
 
 h2 + p {
     font-size: 20px;
+    margin-top: 16px;
 }
 
 /* padding */
@@ -370,6 +375,32 @@ h1 {
     display: inline-block;
 }
 
+/* -----speed test----- */
+
+#test-speed {
+    background-color: #031b4e;
+    background-image: url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
+    color: #fff;
+}
+
+#test-speed h2 {
+    color: #fff;
+}
+
+.cities-opacity {
+    opacity: 0.6;
+}
+
+/*#test-speed table tbody:first-child*/
+.table-no-border {
+    border-top: 0;
+}
+
+#test-speed h2 {
+    margin-bottom: 64px;
+}
+
+
 @media screen and (min-width: 480px) {
     /* come faccio a metterlo 100% sotto i 480px???
     #features .container-small div:not(:first-child) {
@@ -379,6 +410,11 @@ h1 {
 
 /* Small devices sm (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     #jumbo {
         background-color: #0248ff;
