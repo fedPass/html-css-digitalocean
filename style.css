@@ -454,19 +454,20 @@ blockquote p {
     margin-bottom: 16px;
 }
 
-blockquote footer {
+cite {
     opacity: .8;
     margin-bottom: 24px;
     font-size: 16px;
 }
 
-blockquote footer::before {
-    display: none;
-}
-
 cite span {
     font-size: 12px;
     font-style: normal;
+}
+
+blockquote a {
+    margin-top: 24px;
+    display: block;
 }
 
 /* -----cta-strip----- */
@@ -493,6 +494,38 @@ cite span {
     transform: translateX(-50%);
     margin-top: 24px;
 }
+
+/* ----footer---- */
+
+footer {
+    background-color: #010e28;
+    padding: 96px 0;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    opacity: 0.5;
+}
+
+footer a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.menu-footer-container li {
+    margin-top: 7px;
+}
+
+.menu-footer-container nav {
+    padding-top: 32px;
+}
+
+.menu-footer-container {
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+
 
 
 @media screen and (min-width: 480px) {
@@ -537,7 +570,9 @@ cite span {
 /* Medium devices md (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
 
-
+    .menu-footer-container nav {
+        padding-top: 0;
+    }
 
 }
 
