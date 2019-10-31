@@ -428,7 +428,14 @@ tr.table-no-border {
 
 /*----review----*/
 
+.play-container-min {
+    height: 294px;
+    line-height: 294px;
+    font-size: 50px
+}
+
 blockquote {
+    margin-top: 16px;
     background-color: #fff;
     border: 1px solid #e5e8ed;
     border-radius: 5px;
@@ -444,17 +451,18 @@ blockquote img {
 blockquote p {
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 16px;
 }
 
-.play-container-min {
-    height: 294px;
-    line-height: 294px;
-    font-size: 50px
+blockquote footer {
+    opacity: .8;
+    margin-bottom: 24px;
 }
 
-blockquote a {
-    margin-top: 24px;
+blockquote footer::before {
+    display: none;
 }
+
 
 
 @media screen and (min-width: 480px) {
