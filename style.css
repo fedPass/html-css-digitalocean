@@ -457,12 +457,42 @@ blockquote p {
 blockquote footer {
     opacity: .8;
     margin-bottom: 24px;
+    font-size: 16px;
 }
 
 blockquote footer::before {
     display: none;
 }
 
+cite span {
+    font-size: 12px;
+    font-style: normal;
+}
+
+/* -----cta-strip----- */
+
+#cta-strip {
+    background-color: #0248ff;
+    background-image: url(https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg);
+    background-position: -150px bottom;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
+#cta-strip h2 {
+    color: #fff;
+}
+
+.my-btn-cta {
+    background-color: #fff;
+    color: #0069ff;
+    padding-left: 32px;
+    padding-right: 32px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 24px;
+}
 
 
 @media screen and (min-width: 480px) {
@@ -476,8 +506,8 @@ blockquote footer::before {
 @media screen and (min-width: 768px) {
 
     section {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     #jumbo {
