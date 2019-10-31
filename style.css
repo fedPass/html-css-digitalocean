@@ -15,6 +15,11 @@ body {
     clear: both;
 }
 
+.container-small > .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -47,8 +52,20 @@ h2 + p {
     padding-bottom: 64px;
 }
 
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
 .mb {
     margin-bottom: 64px;
+}
+
+.mt {
+    margin-top: 64px;
 }
 
 .pt-lg {
@@ -59,8 +76,15 @@ h2 + p {
     padding-top: 64px;
 }
 
+/* -----Color setting------ */
+
 .gray-strip {
     background-color: #f3f5f9;
+}
+
+.blue-link {
+    color: #0069ff;
+    font-weight: bold;
 }
 
 
@@ -256,10 +280,6 @@ h1 {
 
 #customer p {
     color: #919da8;
-}
-
-#customer a {
-    color: #0069ff;
 }
 
 .customer-logo-container {
