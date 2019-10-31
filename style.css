@@ -92,6 +92,10 @@ h2 + p {
     font-weight: bold;
 }
 
+.blue-link:hover {
+    color: #005fe6;
+}
+
 
 
 /*---header---*/
@@ -381,6 +385,7 @@ h1 {
     background-color: #031b4e;
     background-image: url(https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg);
     color: #fff;
+    font-size: 13px;
 }
 
 #test-speed h2 {
@@ -391,13 +396,64 @@ h1 {
     opacity: 0.6;
 }
 
-/*#test-speed table tbody:first-child*/
-.table-no-border {
-    border-top: 0;
+/* come stylare i border della tabella?
+    non trovo neanche a quale regola corrisponde
+
+#test-speed table {
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+#test-speed table {
+    border-top: 1px solid hsla(0,0%,100%,.2);
+    border-bottom: 1px solid hsla(0,0%,100%,.2);
+}
+
+#test-speed table tbody:first-child
+tr.table-no-border {
+    border-top: 0;
+} */
 
 #test-speed h2 {
     margin-bottom: 64px;
+}
+
+#test-speed a {
+    color: #00d7d2;
+}
+
+#test-speed a:hover {
+    color: #005fe6;
+}
+
+/*----review----*/
+
+blockquote {
+    background-color: #fff;
+    border: 1px solid #e5e8ed;
+    border-radius: 5px;
+    padding: 32px;
+}
+
+blockquote img {
+    max-width: 175px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+blockquote p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.play-container-min {
+    height: 294px;
+    line-height: 294px;
+    font-size: 50px
+}
+
+blockquote a {
+    margin-top: 24px;
 }
 
 
