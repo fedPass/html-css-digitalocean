@@ -96,8 +96,6 @@ h2 + p {
     color: #005fe6;
 }
 
-
-
 /*---header---*/
 
 header .row {
@@ -106,6 +104,11 @@ header .row {
 }
 
 /*---header desktop----*/
+
+header ul {
+    margin-block-end: 0;
+    margin-bottom: 0;
+}
 
 .header-desktop {
     display: none;
@@ -172,7 +175,7 @@ header .row {
     font-weight: bold;
     position: absolute;
     right: 30px;
-    bottom: 23px;
+    bottom: 18px;
 }
 
 .btn-sign-up:hover {
@@ -274,6 +277,8 @@ h1 {
 .btn-social {
     background-color: #f2f8ff;
     border: 1px solid rgba(0,105,255,.2);
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .btn-social i {
@@ -323,6 +328,7 @@ h1 {
 
 #features li a:hover {
     color: #031b4e;
+    font-weight: bold;
 }
 
 #features li a:first-child {
@@ -337,7 +343,7 @@ h1 {
 
 #features .container-small > div {
     margin-bottom: 32px;
-}
+} */
 
 /*----program-screen-------- */
 
@@ -355,6 +361,10 @@ h1 {
 
 #play-light {
     color: #b9b9b9;
+}
+
+#play-light:hover {
+    color: #0069ff;
 }
 
 .ball-bar {
@@ -396,23 +406,9 @@ h1 {
     opacity: 0.6;
 }
 
-/* come stylare i border della tabella?
-    non trovo neanche a quale regola corrisponde
-
-#test-speed table {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#test-speed table {
-    border-top: 1px solid hsla(0,0%,100%,.2);
-    border-bottom: 1px solid hsla(0,0%,100%,.2);
-}
-
-#test-speed table tbody:first-child
-tr.table-no-border {
+#test-speed table tbody tr:first-child * {
     border-top: 0;
-} */
+}
 
 #test-speed h2 {
     margin-bottom: 64px;
@@ -557,15 +553,6 @@ footer small {
     bottom: 10px;
 }
 
-
-
-@media screen and (min-width: 480px) {
-    /* come faccio a metterlo 100% sotto i 480px???
-    #features .container-small div:not(:first-child) {
-        width: 100%;
-    } */
-}
-
 /* Small devices sm (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -582,7 +569,6 @@ footer small {
         min-height: 800px;
         padding-top: 0;
     }
-
 
     #subscrition-form,
     .my-jumbotron {
